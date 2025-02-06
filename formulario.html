@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Maxikiosco</title>
+    <style>
+         /* Estilos del menú de navegación */
+         nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d86b5e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #ffeb99;
+            color: #d86b5e;
+        }
+
+        .logo {
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        /* Estilos del contenido principal */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #d86b5e;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        .contact-section {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #d86b5e;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .form-container form {
+            background-color: #d86b5e;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 0.8rem;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            background-color: #fff;
+            color: #d86b5e;
+            padding: 1rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #f1f1f1;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 3rem;
+        }
+
+        .contact-info div {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .contact-info img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <!-- Logo de la despensa -->
+        <img src="LOGOMAXIKIOSCO.png" alt="Logo Maxikiosco" class="logo">
+        <ul class="nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="envios.html">Envíos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+<body>
+
+    <header>
+        <h1>Contacto - Maxikiosco</h1>
+    </header>
+
+    <main class="container">
+        <section class="contact-section">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna pregunta o necesitas ayuda, ¡estamos aquí para ayudarte! Llena el formulario de abajo o contáctanos a través de nuestras redes sociales.</p>
+
+            <div class="form-container">
+                <!-- Formulario de contacto -->
+                <form action=" https://formspree.io/f/mqaekwkl" 
+                      method="post"> 
+                    <h3>Formulario de Contacto</h3>
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+    
+
+            <!-- Información de contacto adicional -->
+            <div class="contact-info">
+                <div>
+                    <h3>Teléfono</h3>
+                    <p>+54 9 351 734 8067</p>
+                    <img src="whatsapp.jpg" alt="Teléfono">
+                </div>
+                <div>
+                    <h3>Email</h3>
+                    <p>@maxikiosco.cba0001.com</p>
+                    <img src="gmail1.jpg" alt="Email">
+                </div>
+                <div>
+                    <h3>Redes Sociales</h3>
+                    <p>  maxi kiosco</p>
+                    <img src="facebook.jpg" alt="Instagram">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maxikiosco. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

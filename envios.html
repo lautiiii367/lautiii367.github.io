@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envíos - Maxikiosco</title>
+    <style>
+         /* Estilos del menú de navegación */
+         nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d86b5e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #ffeb99;
+            color: #d86b5e;
+        }
+
+        .logo {
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        /* Estilos del contenido principal */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #d86b5e;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* Estilos generales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            padding: 2rem;
+        }
+
+        /* Sección de envíos */
+        .shipping-section {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .shipping-section:hover {
+            transform: scale(1.03);
+        }
+
+        .shipping-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #d86b5e;
+        }
+
+        .shipping-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Opciones de envío */
+        .shipping-options {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .shipping-option {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .shipping-option:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .shipping-option h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .shipping-option p {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .shipping-option .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .shipping-option img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-button {
+            background-color: #5ed8be;
+            color: white;
+            padding: 1rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 1rem;
+            width: 100%; /* Ajuste para que ocupe el 100% del ancho de la tarjeta */
+            text-align: center;
+            transition: background-color 0.3s ease;
+            margin-bottom: 1rem;
+        }
+
+        .whatsapp-button:hover {
+            background-color: #5ed8be;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1rem;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .shipping-options {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .shipping-option {
+                width: 80%;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <!-- Logo de la despensa -->
+        <img src="LOGOMAXIKIOSCO.png" alt="Logo Maxikiosco" class="logo">
+        <ul class="nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="envios.html">Envíos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+
+
+<body>
+
+    <header>
+        <h1>Envíos - Maxikiosco</h1>
+    </header>
+
+    <main class="container">
+        <section class="shipping-section">
+            <h2>Elige tu opción de envío</h2>
+            <p>Maxikiosco te ofrece opciones de envío rápidas y económicas para que recibas tus productos de forma cómoda y segura. ¡Te las contamos aquí!</p>
+
+            <div class="shipping-options">
+                <!-- Opción 1: Envío Estándar -->
+                <div class="shipping-option">
+                    <img src="rappi1.jpg" alt="Envío Estándar">
+                    <h3>Envío Estándar</h3>
+                    <p>Entrega en 3-5 días hábiles.</p>
+                    <p class="price">$200</p>
+                    <p>Ideal para compras sin prisa.</p>
+                    <a href="https://wa.me/+5493517348067?text=Hola,%20quiero%20realizar%20una%20compra%20con%20el%20descuento%20de%20Envío%20estandar"
+                        class="whatsapp-button" target="_blank">
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Opción 2: Envío Exprés -->
+                <div class="shipping-option">
+                    <img src="rappi2.jpg" alt="Envío Exprés">
+                    <h3>Envío Exprés</h3>
+                    <p>Entrega en 1-2 días hábiles.</p>
+                    <p class="price">$500</p>
+                    <p>Si necesitas tus productos rápidamente.</p>
+                    <a href="https://wa.me/+5493517348067?text=Hola,%20quiero%20realizar%20una%20compra%20con%20el%20descuento%20de%20Envío%20express"
+                        class="whatsapp-button" target="_blank">
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Opción 3: Envío Gratuito -->
+                <div class="shipping-option">
+                    <img src="rappi3.jpg" alt="Envío Gratuito">
+                    <h3>Envío Gratuito</h3>
+                    <p>En compras superiores a $3000.</p>
+                    <p class="price">¡Gratis!</p>
+                    <p>Para que puedas disfrutar sin preocuparte por el costo.</p>
+                    <a href="https://wa.me/+5493517348067?text=Hola,%20quiero%20realizar%20una%20compra%20con%20el%20descuento%20de%20Envío%20gratuito"
+                        class="whatsapp-button" target="_blank">
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maxikiosco. Todos los derechos reservados.</p>
+        <li> <a href=" bdb" target="_blank"></li
+            <li> <img src="inf"> </a></li
+    </footer>
+
+</body>
+
+</html>

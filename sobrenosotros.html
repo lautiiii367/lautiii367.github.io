@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Despensa</title>
+    <style>
+         /* Estilos del menú de navegación */
+         nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #d86b5e;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: #ffeb99;
+            color: #d86b5e;
+        }
+
+        .logo {
+            width: 100px; /* Ajusta el tamaño del logo */
+            height: auto;
+        }
+
+        /* Estilos del contenido principal */
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            color: #d86b5e;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        /* Sección Principal */
+        .about-section {
+            background-color: #fff;
+            padding: 3rem 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5rem;
+            color: #d86b5e;
+            margin-bottom: 1rem;
+        }
+
+        .about-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Sección de imágenes */
+        .about-images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 2rem;
+        }
+
+        .about-images img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d86b5e;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .about-images img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Sección de Valores */
+        .values-section {
+            background-color: #d86b5e;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .values-section h3 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            background-color: white;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .value-card h4 {
+            color: #d86b5e;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            font-size: 1rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <!-- Logo de la despensa -->
+        <img src="LOGOMAXIKIOSCO.png" alt="Logo Maxikiosco" class="logo">
+        <ul class="nav">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="envios.html">Envíos</a></li>
+            <li><a href="formulario.html">Formulario</a></li>
+        </ul>
+    </nav>
+
+<body>
+    <header>
+        <h1>Sobre Nosotros</h1>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <h2>¿Quiénes Somos?</h2>
+            <p>En Despensa, nos apasiona ofrecer lo mejor de los productos frescos y de calidad a tu mesa. Somos una despensa local que se esfuerza por brindar una experiencia de compra única, centrada en la satisfacción y confianza de nuestros clientes. Desde alimentos básicos hasta productos gourmet, tenemos lo que necesitas para llenar tu despensa con lo mejor.</p>
+            <div class="about-images">
+                <img src="sobrenosotros1.jpg" alt="Imagen 1">
+                <img src="sobrenosotros2.jpg" alt="Imagen 2">
+                <img src="sobrenosotros3.jpg" alt="Imagen 3">
+            </div>
+        </section>
+
+        <section class="values-section">
+            <h3>Nuestros Valores</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h4>Calidad</h4>
+                    <p>Nos aseguramos de ofrecerte solo lo mejor. Cada producto es cuidadosamente seleccionado para que puedas disfrutar de lo más fresco y de alta calidad.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Compromiso</h4>
+                    <p>Tu satisfacción es nuestra prioridad. Trabajamos arduamente para garantizar que cada compra sea una experiencia positiva, desde la selección hasta la entrega.</p>
+                </div>
+                <div class="value-card">
+                    <h4>Confianza</h4>
+                    <p>Somos una despensa en la que puedes confiar. Nuestra misión es construir relaciones duraderas basadas en la honestidad y transparencia con nuestros clientes.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Despensa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
